@@ -1,5 +1,6 @@
 @echo off
 rem Script for setting python venv for PHNcore and installing its package in develop mode
+rem Author: Nikita Motornyi
 
 rem Next variables will be local
 SETLOCAL
@@ -27,4 +28,3 @@ pip install -e %ROOT_DIR%
 
 echo List of installed packages:
 pip list
-pause
