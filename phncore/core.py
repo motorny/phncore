@@ -17,6 +17,8 @@ status_rsrc = StatusResource()
 
 app.add_route('/status', status_rsrc)
 
+
+# todo: add cmd arguments: ip addr and port
 if __name__ == '__main__':
     port = 8200
     httpd = simple_server.make_server('127.0.0.1', port, app)

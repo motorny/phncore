@@ -18,4 +18,7 @@ setup(
     author_email='motorny.nikita@gmail.com',
     description='PHNode (Personal House Node) core package',
     install_requires=parse_reqs(),
+    scripts=['phncore/bin/phncore.py',
+             'phncore/core.py',
+             ],
 )
