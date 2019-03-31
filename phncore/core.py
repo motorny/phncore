@@ -10,12 +10,20 @@ class StatusResource(object):
         server_status = {'PHNcore': 'OK'}
         resp.body = json.dumps(server_status)
 
+class Temperature(object):
+    def on_get(self, req, resp):
+        resp.status = falcon.HTTP_200
+        server_status = {'Temperature': '25C'}
+        resp.body = json.dumps(server_status)
+
 
 app = falcon.API()
 status_rsrc = StatusResource()
+status_rsrc_2 = Temperature()
 
 
 app.add_route('/status', status_rsrc)
+app.add_route('/sensors/1', status_rsrc_2)
 
 
 # todo: add cmd arguments: ip addr and port
