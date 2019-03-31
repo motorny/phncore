@@ -19,11 +19,11 @@ class Temperature(object):
 
 app = falcon.API()
 status_rsrc = StatusResource()
-status_rsrc_2 = Temperature()
+temp_rsrc = Temperature()
 
 
 app.add_route('/status', status_rsrc)
-app.add_route('/sensors/1', status_rsrc_2)
+app.add_route('/sensors/1', temp_rsrc)
 
 
 # todo: add cmd arguments: ip addr and port
