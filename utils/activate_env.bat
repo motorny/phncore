@@ -9,7 +9,7 @@ set __ENV_NAME__PHNCORE=env_core_37
 rem Deactivate just in case
 call deactivate.bat
 
-echo Activating environment %ENV_NAME%
+echo Activating environment %__ENV_NAME__PHNCORE%
 rem activate env
 call .\..\env\%__ENV_NAME__PHNCORE%\Scripts\activate.bat
 
